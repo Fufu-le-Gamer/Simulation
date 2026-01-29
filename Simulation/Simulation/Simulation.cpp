@@ -1,5 +1,4 @@
 #include <SFML/Graphics.hpp>
-#include <optional>
 
 int main()
 {
@@ -10,11 +9,15 @@ int main()
     const sf::Texture texture("cute_image.jpg");
     sf::Sprite sprite(texture);
 
+    // Create a graphical text to display
+    const sf::Font font("arial.ttf");
+    sf::Text text(font, "Hello SFML", 50);
+
     // Start the game loop
     while (window.isOpen())
     {
         // Process events
-        while (const auto event = window.pollEvent())
+        while (const std::optional event = window.pollEvent())
         {
             // Close window: exit
             if (event->is<sf::Event::Closed>())
@@ -26,6 +29,9 @@ int main()
 
         // Draw the sprite
         window.draw(sprite);
+
+        // Draw the string
+        window.draw(text);
 
         // Update the window
         window.display();
