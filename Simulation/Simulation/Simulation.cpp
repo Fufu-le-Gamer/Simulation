@@ -9,9 +9,19 @@ int main()
     const sf::Texture texture("cute_image.jpg");
     sf::Sprite sprite(texture);
 
+    sf::CircleShape shape(100.f);
+    shape.setFillColor(sf::Color::Cyan);
+    // 'entity' can be a sf::Sprite, a sf::Text, a sf::Shape or any other transformable class
+
+// set the origin of the entity
+    shape.setOrigin({ -200.f, -200.f });
+
+    // retrieve the origin of the entity
+    sf::Vector2f origin = shape.getOrigin(); // = (10.f, 20.f)
+
     // Create a graphical text to display
     const sf::Font font("arial.ttf");
-    sf::Text text(font, "Hello SFML", 50);
+    sf::Text text(font, "Abonnez vous à Fufu le Gamer", 50);
 
     // Start the game loop
     while (window.isOpen())
@@ -29,6 +39,8 @@ int main()
 
         // Draw the sprite
         window.draw(sprite);
+
+        window.draw(shape);
 
         // Draw the string
         window.draw(text);
