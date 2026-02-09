@@ -18,12 +18,12 @@
     <ClCompile Include="Simulation.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="Batiment.cpp">
+    <ClCompile Include="Buildings.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Batiment.h">
+    <ClInclude Include="Buildings.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
   </ItemGroup>
