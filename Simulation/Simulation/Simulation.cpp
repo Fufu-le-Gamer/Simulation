@@ -35,9 +35,9 @@ int main()
 
     sf::Text text(font, "Abonnez vous à Fufu le Gamer", 10);
 
-    Buildings bakery(
+    Buildings bakery1(
         font,
-        "Bakery",
+        "Bakery 1",
         { 130.f, 250.f },
         { -10.f, -20.f },
         {0.f, 0.f},
@@ -49,15 +49,15 @@ int main()
         font,
         "Bank",
         { 130.f, 250.f },
-        { -150.f, -20.f },
+        { -100.f, -20.f },
         { 100.f, 0.f },
         sf::Color::Yellow,
         0.f
     );
 
-    Buildings butcher(
+    Buildings butcher1(
         font,
-        "Butcher",
+        "Butcher 1",
         { 130.f, 250.f },
         { -300.f, -20.f },
         { 300.f, 0.f },
@@ -72,6 +72,26 @@ int main()
         { -50.f, -330.f },
         { 50.f, 0.f },
         sf::Color::Blue,
+        0.f
+    );
+
+    Buildings bakery2(
+        font,
+        "Bakery 2",
+        { 130.f, 250.f },
+        { -270.f, -330.f },
+        { 200.f, 0.f },
+        sf::Color::Magenta,
+        0.f
+    );
+
+    Buildings butcher2(
+        font,
+        "Butcher 2",
+        { 130.f, 250.f },
+        { -350.f, -330.f },
+        { 300.f, 0.f },
+        sf::Color::Purpule,
         0.f
     );
 
@@ -90,9 +110,11 @@ int main()
 
         window.draw(Roadx);
         window.draw(Roady);
-        bakery.draw(window);
+        bakery1.draw(window);
+        bakery2.draw(window);
         bank.draw(window);
-        butcher.draw(window);
+        butcher1.draw(window);
+        butcher2.draw(window);
         police_station.draw(window);
         window.draw(Center);
         window.draw(text);

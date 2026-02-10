@@ -149,6 +149,7 @@ inline constexpr Color Color::Gray(137, 137, 137);
 inline constexpr Color Color::Red(255, 0, 0);
 inline constexpr Color Color::Green(0, 255, 0);
 inline constexpr Color Color::Blue(0, 0, 255);
+inline constexpr Color Color::Purpule(150, 0, 255);
 inline constexpr Color Color::Yellow(255, 255, 0);
 inline constexpr Color Color::Magenta(255, 0, 255);
 inline constexpr Color Color::Cyan(0, 255, 255);

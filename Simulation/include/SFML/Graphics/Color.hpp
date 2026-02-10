@@ -85,6 +85,7 @@ public:
     static const Color Red;         //!< Red predefined color
     static const Color Green;       //!< Green predefined color
     static const Color Blue;        //!< Blue predefined color
+    static const Color Purpule;
     static const Color Yellow;      //!< Yellow predefined color
     static const Color Magenta;     //!< Magenta predefined color
     static const Color Cyan;        //!< Cyan predefined color
