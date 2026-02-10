@@ -1,5 +1,6 @@
 #include <SFML/Graphics.hpp>
 #include "Buildings.h"
+#include "Clients.h"
 
 int main()
 {
@@ -95,6 +96,9 @@ int main()
         0.f
     );
 
+    Clients clients({ 40.f, 40.f }, 280.f, 200.f); //taille, position, vitesse
+    sf::Clock clock;
+
     // Start the game loop
     while (window.isOpen())
     {
@@ -105,6 +109,10 @@ int main()
             if (event->is<sf::Event::Closed>())
                 window.close();
         }
+
+        float deltaTime = clock.restart().asSeconds();
+
+        clients.update(deltaTime);
 
         window.clear();
 
@@ -117,6 +125,7 @@ int main()
         butcher2.draw(window);
         police_station.draw(window);
         window.draw(Center);
+        clients.draw(window);
         window.draw(text);
 
         window.display();

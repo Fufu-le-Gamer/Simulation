@@ -1,5 +1,3 @@
-﻿  Buildings.cpp
-  Simulation.cpp
-C:\Users\yducrocq\Documents\GitHub\Simulation\Simulation\Simulation\Simulation.cpp(34,22): warning C4834: abandon de la valeur de retour de la fonction avec l’attribut [[nodiscard]]
-  Génération de code en cours...
+﻿  Simulation.cpp
+C:\Users\yducrocq\Documents\GitHub\Simulation\Simulation\Simulation\Simulation.cpp(35,22): warning C4834: abandon de la valeur de retour de la fonction avec l’attribut [[nodiscard]]
   Simulation.vcxproj -> C:\Users\yducrocq\Documents\GitHub\Simulation\Simulation\x64\Debug\Simulation.exe
