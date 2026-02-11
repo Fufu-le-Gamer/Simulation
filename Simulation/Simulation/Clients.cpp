@@ -1,15 +1,14 @@
 #include "Clients.h"
 
-Clients::Clients(const sf::Vector2f& pnj_size,
+Clients::Clients(float radius,
 	float spawn,
 	float speed)
-	:m_pnj(),
+	:m_pnj(radius),
 	m_speed(speed),
 	m_spawn(spawn)
 {
-	m_pnj.setSize(pnj_size);
 	m_pnj.setFillColor(sf::Color::Green);
-	m_pnj.setPosition({ -100.f, spawn });
+	m_pnj.setPosition({ -60.f, spawn - radius });
 }
 
 void Clients::update(float deltaTime)
@@ -18,7 +17,7 @@ void Clients::update(float deltaTime)
 
 	if (m_pnj.getPosition().x > 850.f)
 	{
-		m_pnj.setPosition({ -100.f, m_spawn });
+		m_pnj.setPosition({ -60.f, m_spawn - m_pnj.getRadius()});
 	}
 }
 

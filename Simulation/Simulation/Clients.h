@@ -4,7 +4,7 @@
 class Clients
 {
 public:
-	Clients(const sf::Vector2f& pnjsize,
+	Clients(float radius,
 		float spawn,
 		float speed);
 
@@ -12,7 +12,7 @@ public:
 	void draw(sf::RenderWindow& win)const;
 
 private:
-	sf::RectangleShape m_pnj;
+	sf::CircleShape m_pnj;
 	float m_speed;
 	float m_spawn;
 	

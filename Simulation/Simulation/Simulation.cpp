@@ -96,7 +96,7 @@ int main()
         0.f
     );
 
-    Clients clients({ 40.f, 40.f }, 280.f, 200.f); //taille, position, vitesse
+    Clients clients( 20.f, 300.f, 200.f); //taille, position, vitesse
     sf::Clock clock;
 
     // Start the game loop
@@ -118,14 +118,14 @@ int main()
 
         window.draw(Roadx);
         window.draw(Roady);
+        window.draw(Center);
+        clients.draw(window);
         bakery1.draw(window);
         bakery2.draw(window);
         bank.draw(window);
         butcher1.draw(window);
         butcher2.draw(window);
         police_station.draw(window);
-        window.draw(Center);
-        clients.draw(window);
         window.draw(text);
 
         window.display();
