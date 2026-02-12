@@ -1,3 +1,5 @@
-﻿  Simulation.cpp
-C:\Users\yducrocq\Documents\GitHub\Simulation\Simulation\Simulation\Simulation.cpp(35,22): warning C4834: abandon de la valeur de retour de la fonction avec l’attribut [[nodiscard]]
+﻿  LINK : C:\Users\yducrocq\Documents\GitHub\Simulation\Simulation\x64\Debug\Simulation.exe introuvable ou non généré par la dernière édition de liens incrémentielle ; édition de liens complète en cours
+Buildings.obj : warning LNK4099: PDB '' n'a pu être trouvé avec 'Buildings.obj' ou sur '' ; l'objet sera lié sans informations de débogage
+Clients.obj : warning LNK4099: PDB '' n'a pu être trouvé avec 'Clients.obj' ou sur '' ; l'objet sera lié sans informations de débogage
+Simulation.obj : warning LNK4099: PDB '' n'a pu être trouvé avec 'Simulation.obj' ou sur '' ; l'objet sera lié sans informations de débogage
   Simulation.vcxproj -> C:\Users\yducrocq\Documents\GitHub\Simulation\Simulation\x64\Debug\Simulation.exe
