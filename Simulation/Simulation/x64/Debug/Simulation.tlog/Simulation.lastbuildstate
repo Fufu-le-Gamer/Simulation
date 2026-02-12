@@ -1,2 +1,6 @@
 PlatformToolSet=v143:VCToolArchitecture=Native64Bit:VCToolsVersion=14.38.33130:TargetPlatformVersion=10.0.26100.0:
+<<<<<<< HEAD:Simulation/Simulation/x64/Debug/Simulation.tlog/Simulation.lastbuildstate
 Debug|x64|C:\Users\mmoreau\Documents\GitHub\Simulation\Simulation\|
+=======
+Debug|x64|C:\Users\yducrocq\Documents\GitHub\Simulation\Simulation\|
+>>>>>>> 09db8a87d735e3870aadfc7c7d2c5d9e0a744c89:Simulation/TestIA/x64/Debug/TestIA.tlog/TestIA.lastbuildstate
