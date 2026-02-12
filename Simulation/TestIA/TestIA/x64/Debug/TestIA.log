@@ -1,0 +1,4 @@
+﻿  TestIA.cpp
+C:\Users\mmoreau\Downloads\TestIA\TestIA\TestIA.cpp(56,15): warning C4244: 'argument' : conversion de 'time_t' en 'unsigned int', perte possible de données
+C:\Users\mmoreau\Downloads\TestIA\TestIA\TestIA.cpp(66,9): warning C4101: 'a' : variable locale non référencée
+  TestIA.vcxproj -> C:\Users\mmoreau\Downloads\TestIA\x64\Debug\TestIA.exe
