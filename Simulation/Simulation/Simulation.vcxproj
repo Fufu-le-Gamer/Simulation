@@ -137,13 +137,37 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BehaviorTree.cpp" />
     <ClCompile Include="Buildings.cpp" />
+    <ClCompile Include="BuyTask.cpp" />
+    <ClCompile Include="CheckDemandTask.cpp" />
     <ClCompile Include="Clients.cpp" />
+    <ClCompile Include="FallBack.cpp" />
+    <ClCompile Include="FlowNode.cpp" />
+    <ClCompile Include="Ia.cpp" />
+    <ClCompile Include="Node.cpp" />
+    <ClCompile Include="OpeningShopTask.cpp" />
+    <ClCompile Include="Sequence.cpp" />
+    <ClCompile Include="Shop.cpp" />
     <ClCompile Include="Simulation.cpp" />
+    <ClCompile Include="TaskNode.cpp" />
+    <ClCompile Include="WaitTask.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BehaviorTree.h" />
     <ClInclude Include="Buildings.h" />
+    <ClInclude Include="BuyTask.h" />
+    <ClInclude Include="CheckDemandTask.h" />
     <ClInclude Include="Clients.h" />
+    <ClInclude Include="FallBack.h" />
+    <ClInclude Include="FlowNode.h" />
+    <ClInclude Include="Ia.h" />
+    <ClInclude Include="Node.h" />
+    <ClInclude Include="OpeningShopTask.h" />
+    <ClInclude Include="Sequence.h" />
+    <ClInclude Include="Shop.h" />
+    <ClInclude Include="TaskNode.h" />
+    <ClInclude Include="WaitTask.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
