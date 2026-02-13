@@ -25,3 +25,8 @@ void Clients::draw(sf::RenderWindow& win) const
 {
 	win.draw(m_pnj);
 }
+
+
+
+
+

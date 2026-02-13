@@ -1,6 +1,7 @@
 #pragma once
 #include "TaskNode.h"
 
+class Ia;
 
 class CheckDemandTask : public TaskNode {
 public:

@@ -69,14 +69,11 @@ int main()
     int compte_jour = 0;
 
     EnnemiBlackBoard* MyBlackBoard = new EnnemiBlackBoard();
-    BehaviorTree* MyBt = new EnnemyBehaviorTree(MyBlackBoard);
+    BehaviorTree* MyBt = new ClientBehaviorTree(MyBlackBoard);
     MyBt->BuildTree();
     MyBt->BeginExecute();
 
-    while (BTClock.TimeSinceStart() < 10000.0f) {
-        float DeltaTime = BTClock.GetElapsedTime();
-        MyBt->Tick(DeltaTime);
-    }
+    
 
 
 
@@ -191,24 +188,28 @@ int main()
                 window.close();
         }
 
-        float deltaTime = clock.restart().asSeconds();
+            float DeltaTime = BTClock.GetElapsedTime();
+            MyBt->Tick(DeltaTime);
 
-        clients.update(deltaTime);
+            float deltaTime = clock.restart().asSeconds();
 
-        window.clear();
+            clients.update(deltaTime);
 
-        window.draw(Roadx);
-        window.draw(Roady);
-        window.draw(Center);
-        clients.draw(window);
-        bakery1.draw(window);
-        bakery2.draw(window);
-        bank.draw(window);
-        butcher1.draw(window);
-        butcher2.draw(window);
-        police_station.draw(window);
-        window.draw(text);
+            window.clear();
 
-        window.display();
+            window.draw(Roadx);
+            window.draw(Roady);
+            window.draw(Center);
+            clients.draw(window);
+            bakery1.draw(window);
+            bakery2.draw(window);
+            bank.draw(window);
+            butcher1.draw(window);
+            butcher2.draw(window);
+            police_station.draw(window);
+            window.draw(text);
+
+            window.display();
+        
     }
 }
