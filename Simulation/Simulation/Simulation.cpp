@@ -163,11 +163,14 @@ int main()
         0.f
     );
 
-    Clients clients1( 20.f, 300.f, 200.f); //taille, position, vitesse
-    sf::Clock clock;
+    std::vector<Clients*> clients;
+    clients.push_back(new Clients(20.f, 300.f, 200.f));
 
-    Clients clients2(20.f, 400.f, 200.f);
-    clock;
+    sf::Clock spawnClock;
+    bool client2Spawn = false;
+    float spawnDelay = 1.f;
+
+    sf::Clock clock;
 
     // Start the game loop
     while (window.isOpen())
@@ -185,15 +188,25 @@ int main()
 
             float deltaTime = clock.restart().asSeconds();
 
-            clients1.update(deltaTime);
+            if (!client2Spawn && spawnClock.getElapsedTime().asSeconds() >= spawnDelay) {
+                clients.push_back(new Clients(20.f, 300.f, 200.f));
+                client2Spawn = true;
+            }
+
+            for (Clients* client : clients) {
+                client->update(deltaTime);
+            }
 
             window.clear();
 
             window.draw(Roadx);
             window.draw(Roady);
             window.draw(Center);
-            clients1.draw(window);
-            clients2.draw(window);
+
+            for (Clients* client : clients) {
+                client->draw(window);
+            }
+
             bakery1.draw(window);
             bakery2.draw(window);
             bank.draw(window);

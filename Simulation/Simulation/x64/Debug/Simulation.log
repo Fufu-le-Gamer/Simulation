@@ -1,1 +1,8 @@
-﻿  Simulation.vcxproj -> C:\Users\yducrocq\Documents\GitHub\Simulation\Simulation\x64\Debug\Simulation.exe
+﻿  Clients.cpp
+  Simulation.cpp
+C:\Users\yducrocq\Documents\GitHub\Simulation\Simulation\Simulation\Simulation.cpp(56,15): warning C4244: 'argument' : conversion de 'time_t' en 'unsigned int', perte possible de données
+C:\Users\yducrocq\Documents\GitHub\Simulation\Simulation\Simulation\Simulation.cpp(102,22): warning C4834: abandon de la valeur de retour de la fonction avec l’attribut [[nodiscard]]
+C:\Users\yducrocq\Documents\GitHub\Simulation\Simulation\Simulation\Simulation.cpp(66,9): warning C4101: 'a' : variable locale non référencée
+C:\Users\yducrocq\Documents\GitHub\Simulation\Simulation\Simulation\Simulation.cpp(67,9): warning C4101: 'nombre_client' : variable locale non référencée
+  Génération de code en cours...
+  Simulation.vcxproj -> C:\Users\yducrocq\Documents\GitHub\Simulation\Simulation\x64\Debug\Simulation.exe
